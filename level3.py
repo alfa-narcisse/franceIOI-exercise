@@ -14,3 +14,7 @@ for k in range(M):
     chargement += " "+str(findMax(stck))
 
 print(chargement[1:])
+
+
+# Préparation du stock
+
