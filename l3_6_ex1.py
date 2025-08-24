@@ -1,8 +1,7 @@
 # Exercice 5: déchet polluant 
-
 N,M = list(map(int,input().split()))
 stck = list(map(int,input().split()))
-chargement = ""
+chargement = []
 def findMax(s):
     i = 0
     for j in range(len(s)):
@@ -11,10 +10,9 @@ def findMax(s):
     return s.pop(i)
 
 for k in range(M):
-    chargement += " "+str(findMax(stck))
+    chargement.append(str(findMax(stck)))
 
-print(chargement[1:])
+print(" ".join(chargement))
 
 
 # Préparation du stock
-
